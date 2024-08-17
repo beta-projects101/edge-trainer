@@ -29,8 +29,7 @@ const state = {
 }
 
 const options = {
-  modelPath: '/models/default-f16/model.json',
-  imagePath: '../samples/example.jpg',
+  modelPath: './models/default-f16/model.json',
   minScore: 0.38,
   maxResults: 50,
   iouThreshold: 0.5,
