@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script type="module" crossorigin src="/assets/index-BHWmMli0.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-R5vHIscz.css">
+  </head>
+  <body>
+    <nav id="tool-bar">
+      <button id="remove">Begin!</button>
+      <span>
+        <label for="style">Remove style </label>
+        <br>
+        <select name="style" id="style">
+          <option value="lines" selected>Lines</option>
+          <option value="boxes">Boxes</option>
+        </select>
+      </span>
+      <span>
+        <label for="speed-select" id="speed-label"><span>3s</span><span>Remove Speed</span><span>0.5s</span></label>
+        <!-- <br> -->
+        <input type="range" name="speed-select" id="speed-select" min="-6" max="-1" step="1" value="1">
+      </span>
+    </nav>
+  
+    <img src="" id="hidden-image">
+    <img src="" id="cutout-image">
+
+    <div id="status-container">
+      <div id="upload-container">
+        <label for="image-upload" id="file-select">Upload Image(s)</label>
+        <input type="file" id="image-upload" accept="image/*" value="uplaod" multiple>
+        <br>
+        <br>
+        <h1>Get to the edge before each image is fully revealed</h1>
+      </div>
+
+      <h1 id="status"></h1>
+    </div>
+
+    <div id="canvas-container">
+      <h1 id="cooldown">Hands Off</h1>
+      <canvas id="full-canvas"></canvas>
+      <canvas id="canvas"></canvas>
+    </div>
+    <script src=" https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.10.0/dist/tf.min.js "></script>
+  </body>
+</html>
